@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/output.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body class="font-epilogue transition-all ease-in-out">
+
+  <header class="flex-1 flex flex-row justify-between items-center p-5 min-[750px]:px-10 min-[750px]:py-6">
+
+    <div class="flex items-center gap-16">
+      <img src="images/logo.svg">
+      
+      <nav class="hidden min-[750px]:flex gap-8 text-[#6a6a6a]">
+        <div><a href="">Features</a></div>
+        <div><a href="">Company</a></div>
+        <div><a href="">Careers</a></div>
+        <div><a href="">About</a></div>
+      </nav>
+    </div>
+
+    <div class="hidden min-[790px]:flex items-center gap-8 text-[#6a6a6a]">
+      <a href="#">Login</a>
+      <button class="border-2 border-[#6a6a6a] rounded-xl pt-2 pr-4 pb-2 pl-4">Register</button>
+    </div>
+
+    <div class="min-[790px]:hidden">
+      <img src="images/icon-menu.svg">
+    </div>
+  </header>
+
+  <main class="grid gap-16 min-[750px]:grid-cols-2 max-w-300 m-auto w-fit">
+
+    <div class="min-[750px]:order-2">
+      <img class="min-[750px]:hidden" src="images/image-hero-mobile.png">
+      <img class="hidden min-[750px]:inline max-h-150" src="images/image-hero-desktop.png">
+    </div>
+
+    <div class="min-[750px]:order-1 flex flex-col h-full min-[750px]:max-h-150">
+
+      <div class="flex-1 flex flex-col items-center gap-[clamp(1rem,3vw,2.5rem)] px-3.5 min-[750px]:items-start justify-center ">
+
+        <h1 class="text-center min-[750px]:text-left text-4xl min-[750px]:text-6xl min-[1065px]:text-7xl font-bold">Make <br class="hidden min-[750px]:inline">remote work</h1>
+
+        <p class="text-center text-[#686767] min-[750px]:text-left max-w-105.75">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+
+        <button class="w-fit text-white bg-black rounded-2xl pt-3 px-6 py-3">Learn more</button>
+
+      </div>
+      
+      <div class="flex flex-wrap justify-evenly my-16 min-[750px]:m-0 items-center gap-3">
+        <img class="w-20 object-contain" src="images/client-databiz.svg">
+        <img class="w-14 object-contain" src="images/client-audiophile.svg">
+        <img class="w-18 object-contain" src="images/client-meet.svg">
+        <img class="w-16 object-contain" src="images/client-maker.svg">
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
